@@ -4,15 +4,16 @@ sayHello(){
   echo "Wie heisst du?"
   read user
   
-  welcome="Hallo du, wie gehts dir ${user} ?"
-  echo $welcome
-  espeak -v german "$welcome"
-  
+  talk "Hallo du, wie gehts dir ${user} ?"
   if [[ "$user" == "Fritz" ]]; then
-    special="Schön, dass du da bist!"
-    echo $special
-    espeak -v german "$special"
+    talk "Schön, dass du da bist!"
   fi
+}
+
+talk(){
+  text=$1
+  echo $text
+  espeak -v german "$text"
 }
 
 sayHello
