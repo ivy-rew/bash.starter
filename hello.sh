@@ -7,6 +7,7 @@ sayHello(){
   talk "Hallo du, wie gehts dir ${user} ?"
   if [[ "$user" == "Fritz" ]]; then
     talk "Schön, dass du da bist!"
+    echo 😍️
   fi
 }
 
