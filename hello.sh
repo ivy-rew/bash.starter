@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo "Who are you?"
-read user
-echo "hello ${user}"
+sayHello(){
+  echo "Who are you?"
+  read user
+  echo "hello ${user}"
+}
 
-
+sayHello
