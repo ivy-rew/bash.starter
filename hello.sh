@@ -1,7 +1,7 @@
 #!/bin/bash
 
-
-user="Fritz"
+echo "Who are you?"
+read user
 echo "hello ${user}"
 
 
