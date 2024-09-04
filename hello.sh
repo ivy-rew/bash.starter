@@ -1,12 +1,12 @@
 #!/bin/bash
 
 sayHello(){
-  echo "Who are you?"
+  echo "Wie heisst du?"
   read user
   welcome="Hallo du, wie gehts dir ${user} ?"
-  espeak "$welcome"
+  espeak -v german "$welcome"
   if [[ "$user" == "Fritz" ]]; then
-    echo "Glad you came over!"
+    echo "Schön, dass du da bist!"
   fi
 }
 
