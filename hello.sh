@@ -1,5 +1,7 @@
 #!/bin/bash
 
-echo "hello terminal"
+
+user="Fritz"
+echo "hello ${user}"
 
 
